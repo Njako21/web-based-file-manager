@@ -1,0 +1,202 @@
+/* directory.css */
+
+.container {
+  padding: var(--container-padding);
+  display: flex;
+}
+
+.container.collapsed {
+  display: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style-type: none;
+  gap: var(--gap-size);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  align-items: center; /* Center the items horizontally */
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#image-headline, #video-headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-top, #video-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.media-container {
+  display: flex;
+  width: 100vw;
+  height: var(--media-container-height); /* Ensure the media container has a fixed height */
+}
+
+#image-container-full {
+  width: 30vw;
+  border-left: var(--border-color) solid 1px;
+  overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+#video-container-full {
+  width: 70vw;
+  border-right: var(--border-color) solid 1px;
+  overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+#image-container-full, #video-container-full {
+  max-height: var(--media-container-height);
+  height: var(--media-container-height);
+}
+
+#video-top, #image-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1vw;
+  height: var(--header-height);
+  box-shadow: var(--shadow);
+  background-color: var(--header-background);
+}
+
+.video-full {
+  box-shadow: var(--shadow);
+  background-color: var(--header-background);
+  text-align: center;
+  height: 3vh;
+  max-width: 30vw;
+}
+
+.video-top {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0.5vw;
+  max-width: 30vw;
+}
+
+.video-top > select {
+  background-color: var(--header-background);
+  width: 3%;
+}
+
+.video-top > p {
+  width: 97%;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* folder */
+
+#top-container-full {
+  display: flex;
+  width: 100vw;
+  height: var(--top-container-height);
+  background-color: var(--top-container-background);
+  color: var(--top-container-link-color);
+  box-shadow: var(--shadow);
+  padding: 0 0.5vw;
+  justify-content: left;
+  align-items: center;
+  column-gap: 1vw;
+}
+
+#top-container-full > a {
+  transition: 0.2s;
+  color: var(--top-container-link-color);
+  text-decoration: none;
+  border-radius: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.2vh solid var(--top-container-link-color);
+  width: 5vh;
+}
+
+#top-container-full > a:hover {
+  transition: 0.2s;
+  color: var(--top-container-link-hover-color);
+  background-color: var(--top-container-link-color);
+}
+
+/* DirectoryFolder */
+
+#folder-container-full {
+  height: var(--folder-container-height);
+  width: 100vw;
+  overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+#folder-container-full > h2 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0 1vw;
+  height: var(--folder-header-height);
+  box-shadow: var(--shadow);
+  background-color: var(--header-background);
+}
+
+#folder-container-full > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
+  gap: var(--gap-size);
+  padding: 1vh 1vw;
+  height: var(--folder-list-height);
+  overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+#folder-container-full ul li a {
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.2vh 0.2vw;
+  color: var(--link-color);
+  background-color: var(--link-background);
+  border-radius: 1vh;
+}
+
+#folder-container-full ul li a:hover {
+  transition: 0.2s;
+  background-color: var(--link-hover-background);
+}
+
+.video{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

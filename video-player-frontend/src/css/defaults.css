@@ -1,0 +1,40 @@
+/* defaults.css */
+
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --container-padding: 1vh 0.5vh;
+    --gap-size: 1rem;
+    --border-color: #2E3033;
+    --media-container-height: 85vh;
+    --header-height: 4vh;
+    --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --header-background: #FAF9F6;
+    --folder-container-height: 15vh;
+    --folder-header-height: 4vh;
+    --folder-list-height: 11vh;
+    --link-hover-background: #2E3033;
+    --link-background: #9EA3AD;
+    --link-color: #FAF9F6;
+    --top-container-background: #2E3033;
+    --top-container-height: 5vh;
+    --top-container-link-hover-color: #2E3033;
+    --top-container-link-color: white;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden; /* Prevents body from scrolling */
+  }
+  
